@@ -1,0 +1,221 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*............................. HEADER................................... */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 1);
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+header.sticky {
+    background: rgba(255, 255, 255, 1);
+}
+header:hover {
+    background: rgba(255, 255, 255, 1);
+}
+.imglogo {
+    width: 100px;
+    height: 45px;
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+}
+.menu {
+    font-size: 50%;
+    display: flex;
+}
+.menu > li {
+    padding: 12px 6px;
+}
+.menu > li a {
+    font-size: 13px;
+    font-weight: bold;
+}
+.others {
+    font-size: 15px;
+    display: flex;
+}
+.others > li {
+    font-weight: bold;
+    padding: 0 12px;
+    font-size: 13px;
+    position: relative;
+    text-align: center;
+}
+.others > li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #cccccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.others > li:last-child::after{
+    display: none;
+}
+.others > li:first-child{
+    position: relative;
+}
+.others > li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    outline: none;
+}
+.others > li:first-child i {
+    position: absolute;
+    right: 8%
+}
+#inputsearch {
+    height: 15px;
+}
+/*.................................... SLIDER.................................... */
+#Slider {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+  }
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+  }
+.dot-container {
+    padding-top: 1%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: #CCC;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.dot.active {
+    background-color: #333;
+}
+/* .......................................CARTEGORY................................ */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.row {
+    display: flex ;
+    flex-wrap: wrap;
+}
+.cartegory {
+    padding: 100px 0 0;
+}
+.cartegory-left {
+    width: 20%;
+}
+.cartegory-left ul li {
+    padding: 12px 0;
+    margin-left: 40px;
+}
+.cartegory-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.cartegory-right {
+    width: 80%;
+}
+.cartegory-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+}
+.cartegory-right-top-item {
+    flex: 1;
+    padding: 0 12px;
+}
+.cartegory-right-top-item button {
+    width: 100%;
+    padding:5px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #cccc;
+    cursor: pointer;
+}
+.cartegory-right-top-item select {
+    padding:5px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #cccc;
+    cursor: pointer;
+}
+.cartegory-right-content {
+    flex: 100000000000;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.cartegory-right-content-item {
+    width: calc(33% - 12px);
+    text-align: center;
+    padding: 12px 0;
+    color: red;
+}
+.cartegory-right-content-item h2 {
+    font-size: 11px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #333333;
+}
+.cartegory-right-content-item img {
+    width: 150px;
+    height: 100px;
+}
+.cartegory-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 89%;
+}
+.cartegory-right-bottom p {
+    font-family: var(--main-text-font);
+    font-size: 11px;
+}
+
+
+
