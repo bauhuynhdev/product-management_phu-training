@@ -4,7 +4,7 @@
         <title>Admin</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/frontend/css/admin.css">
+        <link rel="stylesheet" href="{{asset('public/frontend/css/admin.css')}}">
     </head>
     <body>
             <div id="admin-heading-panel">
@@ -13,9 +13,9 @@
                         Xin chào <span>Admin</span>
                     </div>
                     <div class="right-panel">
-                        <img height="24" src="home icon (1).jpg" />
+                        <img height="24" src="{{asset('public/frontend/Images/home icon (1).jpg')}}"/>
                         <a href="#">Trang chủ</a>
-                        <img height="24" src="500_F_33527214_1ySp8kyGMZEAgk5MGELVAFxHxXRPNVEE.jpg" />
+                        <img height="24" src="{{asset('public/frontend/Images/500_F_33527214_1ySp8kyGMZEAgk5MGELVAFxHxXRPNVEE.jpg')}}"/>
                         <a href="#">Đăng xuất</a>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                                 </tr>
                                 <tr>
                                     <td>YZF</td>
-                                    <td><img height="70px" src="yzf-r1374b (1).jpg" /></td>
+                                    <td><img height="70px" src="{{asset('public/frontend/Images/yzf-r1374b (1).jpg')}}" /></td>
                                     <td>14141242</td>
                                     <td>100,000,000VND</td>
                                     <td><a href="#">Copy</a></td>
@@ -67,7 +67,7 @@
                                 </tr>
                                 <tr>
                                     <td>YZF</td>
-                                    <td><img height="70px" src="yzf-r1374b (1).jpg" /></td>
+                                    <td><img height="70px" src="{{asset('public/frontend/Images/yzf-r1374b (1).jpg')}}" /></td>
                                     <td>14141242</td>
                                     <td>100,000,000VND</td>
                                     <td><a href="#">Copy</a></td>
