@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('public/frontend/css/add.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/add.css')}}">
     <title>Form thêm mới</title>
 </head>
 <body>
@@ -29,6 +29,7 @@
                         <div class="clearfix">
                             <input type="submit" value="Thêm mới">
                             <a href="#" class="buttons">Về trang quản trị</a>
+                            @lang('messages.welcome')
                         </div>
                     </form>
                 </div>
