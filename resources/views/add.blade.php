@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('frontend/css/add.css')}}">
-    <title>Form thêm mới</title>
+    <title>@lang('messages.add_new_page')</title>
 </head>
 <body>
 <div class="container">
@@ -15,21 +15,20 @@
                 <div class="seccontactform">
                     <form action="" method="">
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Tên sản phẩm" value="">
+                        <input class="col2 first" type="text" name="" placeholder="@lang('messages.product_name')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="file" name="" placeholder="Chọn ảnh" value="">
+                            <input class="col2 first" type="file" name="" placeholder="@lang('messages.select_file')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Mã sản phẩm" value="">
+                            <input class="col2 first" type="text" name="" placeholder="@lang('messages.product_code')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Giá" value="">
+                            <input class="col2 first" type="text" name="" placeholder="@lang('messages.price')" value="">
                         </div>
                         <div class="clearfix">
-                            <input type="submit" value="Thêm mới">
-                            <a href="#" class="buttons">Về trang quản trị</a>
-                            @lang('messages.welcome')
+                            <input type="submit" value="@lang('messages.add_new')">
+                            <a href="#" class="buttons">@lang('messages.back_admin_page')</a>
                         </div>
                     </form>
                 </div>

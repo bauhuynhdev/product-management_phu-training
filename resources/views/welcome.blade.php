@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>Web bán Moto</title>
+    <title>@lang('messages.motorbike_sale_website')</title>
 </head>
 <body>
 <header>
@@ -19,12 +19,12 @@
         <li><a href="">Yamaha</a></li>
         <li><a href="">Jawa</a></li>
         <li><a href="">BMW Motorad</a></li>
-        <li><a href="">Liên Hệ</a></li>
+        <li><a href="">@lang('messages.contact')</a></li>
     </div>
     <div class="others">
-        <li> <input type="text" placeholder="Tìm kiếm" id="inputsearch"> <i class="fa fa-search"></i></li>
-        <li> <a href="#">Đăng nhập</a></li>
-        <li> <a href="#">Đăng kí </a></li>
+        <li> <input type="text" placeholder="@lang('messages.search')" id="inputsearch"> <i class="fa fa-search"></i></li>
+        <li> <a href="#">@lang('messages.login')</a></li>
+        <li> <a href="#">@lang('messages.register')</a></li>
         <li> <a class="fa fa-user" href="#"></a></li>
         <li> <a class="fa fa-shopping-cart" href=""></a></li>
     </div>
@@ -59,13 +59,13 @@
             </div>
             <div class="cartegory-right row">
                 <div class="cartegory-right-top-item">
-                    <p>Danh Mục Sản Phẩm</p>
+                    <p>@lang('messages.product_portfolio')</p>
                 </div>
                 <div class="cartegory-right-top-item">
                     <select name="" id="">
-                        <option value="">Sắp xếp</option>
-                        <option value="">Giá từ cao đến thấp</option>
-                        <option value="">Giá từ thấp đến cao</option>
+                        <option value="">@lang('messages.arrangement')</option>
+                        <option value="">@lang('messages.price_from_high_to_low')</option>
+                        <option value="">@lang('messages.price_from_low_to_high')</option>
                     </select>
                  </div>
                  <div class="cartogory-right-content row">
@@ -223,10 +223,10 @@
 
                 <div class="cartegory-right-bottom row">
                     <div class="cartegory-right-bottom-items">
-                        <p>Hiển thị 2 <span> | </span> 4 sản phẩm</p>
+                        <p>@lang('messages.display') 2 <span> | </span> 4 @lang('messages.product')</p>
                     </div>
                     <div class="cartegory-right-bottom-items">
-                        <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span>Trang cuối</p>
+                        <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span> @lang('messages.last_page')</p>
                     </div>
                 </div>
             </div>

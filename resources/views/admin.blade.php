@@ -10,13 +10,13 @@
             <div id="admin-heading-panel">
                 <div class="container">
                     <div class="left-panel">
-                        Xin chào <span>Admin</span>
+                        @lang('messages.hi') <span>Admin</span>
                     </div>
                     <div class="right-panel">
                         <img height="24" src="{{asset('frontend/Images/home icon (1).jpg')}}"/>
-                        <a href="#">Trang chủ</a>
+                        <a href="#">@lang('messages.hi')</a>
                         <img height="24" src="{{asset('frontend/Images/500_F_33527214_1ySp8kyGMZEAgk5MGELVAFxHxXRPNVEE.jpg')}}"/>
-                        <a href="#">Đăng xuất</a>
+                        <a href="#">@lang('messages.logout')</a>
                     </div>
                 </div>
             </div>
@@ -26,35 +26,35 @@
                         <div class="menu-heading">Admin Menu</div>
                         <div class="menu-items">
                             <ul>
-                                <li><a href="product_listing.php">Sản phẩm</a></li>
-                                <li><a href="order_listing.php">Đơn hàng</a></li>
-                                <li><a href="member_listing.php">Quản lý thành viên</a></li>
+                                <li><a href="product_listing.php">@lang('messages.product')</a></li>
+                                <li><a href="order_listing.php">@lang('messages.the_order')</a></li>
+                                <li><a href="member_listing.php">@lang('messages.manage_member')</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="main-content">
-                        <h1>Danh sách sản phẩm</h1>
+                        <h1>@lang('messages.list_of_products')</h1>
                         <div class="listing-items">
                             <div class="buttons">
-                                <a href="">Thêm mới</a>
+                                <a href="">@lang('messages.add_new')</a>
                             </div>
                             <div class="listing-search">
                                 <form>
                                     <fieldset>
-                                        <legend>Tìm kiếm</legend><input type="text">
-                                        <input type="submit" value="Tìm" />
+                                        <legend>@lang('messages.search')</legend><input type="text">
+                                        <input type="submit" value="@lang('messages.search')" />
                                     </fieldset>
                                 </form>
                             </div>
                             <table>
                                 <tr>
-                                    <th>Tên sản phẩm</th>
-                                    <th>Ảnh sản phẩm</th>
-                                    <th>Mã sản phẩm</th>
-                                    <th>Giá</th>
+                                    <th>@lang('messages.product_name')</th>
+                                    <th>@lang('messages.product_image')</th>
+                                    <th>@lang('messages.product_code')</th>
+                                    <th>@lang('messages.price')</th>
                                     <th>Copy</th>
-                                    <th>Sửa</th>
-                                    <th>Xoá</th>
+                                    <th>@lang('messages.edit')</th>
+                                    <th>@lang('messages.delete')</th>
                                 </tr>
                                 <tr>
                                     <td>YZF</td>
@@ -62,17 +62,8 @@
                                     <td>14141242</td>
                                     <td>100,000,000VND</td>
                                     <td><a href="#">Copy</a></td>
-                                    <td><a href="#">Sửa</a></td>
-                                    <td><a href="#">Xoá</a></td>
-                                </tr>
-                                <tr>
-                                    <td>YZF</td>
-                                    <td><img height="70px" src="{{asset('frontend/Images/yzf-r1374b (1).jpg')}}" /></td>
-                                    <td>14141242</td>
-                                    <td>100,000,000VND</td>
-                                    <td><a href="#">Copy</a></td>
-                                    <td><a href="#">Sửa</a></td>
-                                    <td><a href="#">Xoá</a></td>
+                                    <td><a href="#">@lang('messages.edit')</a></td>
+                                    <td><a href="#">@lang('messages.delete')</a></td>
                                 </tr>
                             </table>
                         </div>

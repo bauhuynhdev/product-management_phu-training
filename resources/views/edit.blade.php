@@ -15,20 +15,20 @@
                 <div class="seccontactform">
                     <form action="" method="">
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Tên sản phẩm" value="">
+                            <input class="col2 first" type="text" name="" placeholder="@lang('messages.product_name')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="file" name="" placeholder="Chọn ảnh" value="">
+                            <input class="col2 first" type="file" name="" placeholder="@lang('messages.select_file')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Mã sản phẩm" value="">
+                            <input class="col2 first" type="text" name="" placeholder="@lang('messages.product_code')" value="">
                         </div>
                         <div class="clearfix">
-                            <input class="col2 first" type="text" name="" placeholder="Giá" value="">
+                            <input class="col2 first" type="text" name="" placeholder="@lang('messages.price')" value="">
                         </div>
                         <div class="clearfix">
                             <input type="submit" value="Cập nhật">
-                            <a href="#" class="buttons">Về trang quản trị</a>
+                            <a href="#" class="buttons">@lang('messages.back_admin_page')</a>
                         </div>
                     </form>
                 </div>
