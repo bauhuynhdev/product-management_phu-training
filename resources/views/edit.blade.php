@@ -27,7 +27,7 @@
                             <input class="col2 first" type="text" name="" placeholder="@lang('messages.price')" value="">
                         </div>
                         <div class="clearfix">
-                            <input type="submit" value="Cập nhật">
+                            <input type="submit" value="@lang('messages.update')">
                             <a href="#" class="buttons">@lang('messages.back_admin_page')</a>
                         </div>
                     </form>

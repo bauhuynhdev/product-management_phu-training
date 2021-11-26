@@ -32,7 +32,7 @@ return [
     'list_of_products' => 'Danh sách sản phẩm',
     'add_new' => 'Thêm mới',
     'search' => 'Tìm kiếm',
-    'edit' => 'Sữa',
+    'edit' => 'Sửa',
     'delete' => 'Xoá',
     'add_new_page' => 'Trang thêm mới',
     'contact' => 'Liên hệ'
