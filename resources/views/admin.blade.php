@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Admin</title>
+        <title>@lang('messages.admin_page')</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{asset('frontend/css/admin.css')}}">
@@ -10,7 +10,7 @@
             <div id="admin-heading-panel">
                 <div class="container">
                     <div class="left-panel">
-                        @lang('messages.hi') <span>Admin</span>
+                        @lang('messages.hi') <span>@lang('messages.admin')</span>
                     </div>
                     <div class="right-panel">
                         <img height="24" src="{{asset('frontend/Images/home icon (1).jpg')}}"/>
@@ -23,7 +23,7 @@
             <div id="content-wrapper">
                 <div class="container">
                     <div class="left-menu">
-                        <div class="menu-heading">Admin Menu</div>
+                        <div class="menu-heading">@lang('messages.admin_menu')</div>
                         <div class="menu-items">
                             <ul>
                                 <li><a href="product_listing.php">@lang('messages.product')</a></li>

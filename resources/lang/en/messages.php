@@ -1,5 +1,8 @@
 <?php
 return [
+    'admin_menu' => 'Admin Menu',
+    'admin_page' => 'Trang Admin',
+    'admin' => 'Admin',
     'motorbike_sale_website' => 'Web bán Moto',
     'login' => 'Đăng nhập',
     'register' => 'Đăng kí',
