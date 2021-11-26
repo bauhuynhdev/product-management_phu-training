@@ -12,16 +12,16 @@
         <form class="form-login">
             <h1>@lang('messages.register')</h1>
             <div class="form-text">
-                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="@lang('messages.name')">
             </div>
             <div class="form-text">
-                <input type="password" placeholder="Email">
+                <input type="text" placeholder="@lang('messages.email')">
             </div>
             <div class="form-text">
-                <input type="password" placeholder="Mật Khẩu">
+                <input type="password" placeholder="@lang('messages.password')">
             </div>
             <div class="form-text">
-                <input type="password" placeholder="Xác nhận mật khẩu">
+                <input type="password" placeholder="@lang('messages.confirm_password')">
             </div>
             <button>@lang('messages.register')</button>
             <span>@lang('messages.you_already_have_an_account?')<a href="#">@lang('messages.sign_in_here')</a></span>

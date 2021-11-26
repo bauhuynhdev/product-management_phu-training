@@ -12,10 +12,10 @@
         <form class="form-login">
             <h1>@lang('messages.login')</h1>
             <div class="form-text">
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="@lang('messages.email')">
             </div>
             <div class="form-text">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="@lang('messages.password')">
             </div>
             <button>@lang('messages.login')</button>
             <span>@lang('messages.you_don't_have_an_account_yet?')<a href="#">@lang('messages.sign_up_here')</a></span>
