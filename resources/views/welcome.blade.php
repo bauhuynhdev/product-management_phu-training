@@ -226,7 +226,7 @@
                         <p>@lang('messages.display') 2 <span> | </span> 4 @lang('messages.product')</p>
                     </div>
                     <div class="cartegory-right-bottom-items">
-                        <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span> @lang('messages.last_page')</p>
+                        <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span>@lang('messages.last_page')</p>
                     </div>
                 </div>
             </div>
@@ -269,7 +269,6 @@
         dotActive.classList.remove("active")
         dotItem[index].classList.add("active")
     }
-
     setInterval(imgSlide,5000)
 </script>
 </html>
