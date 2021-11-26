@@ -35,5 +35,9 @@ return [
     'edit' => 'Sữa',
     'delete' => 'Xoá',
     'add_new_page' => 'Trang thêm mới',
-    'contact' => 'Liên hệ'
+    'contact' => 'Liên hệ',
+    'email' => 'Email',
+    'password' => 'Mật khẩu',
+    'confirm' => 'Xác nhận mật khẩu',
+    'name' => 'Họ và tên'
 ];
