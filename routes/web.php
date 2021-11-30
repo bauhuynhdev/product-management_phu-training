@@ -23,6 +23,13 @@ Route::get('/add', function () {
 Route::get('/edit', function () {
     return view('edit');
 });
+Route::get('/register','UserController@show')->name('auth.show');
+Route::post('/register','UserController@store')->name('auth.post');
+Route::get('/login','UserController@showLogin')->name('auth.showLogin');
+Route::post('/login','UserController@login')->name('auth.login');
+Route::get('logout','UserController@logout')->name('logout');
+
+
 
 
 

@@ -22,13 +22,9 @@
         <li><a href="">@lang('messages.contact')</a></li>
     </div>
     <div class="others">
-<<<<<<< HEAD
-        <li> <input type="text" placeholder="Tìm kiếm" id="inputsearch"> <i class="fa fa-search"></i></li>
-=======
         <li> <input type="text" placeholder="@lang('messages.search')" id="inputsearch"> <i class="fa fa-search"></i></li>
->>>>>>> 6114140a1272b0a17439217fb9ef664cd2d3c96c
-        <li> <a href="#">@lang('messages.login')</a></li>
-        <li> <a href="#">@lang('messages.register')</a></li>
+        <li> <a href="{{route('auth.login')}}">@lang('messages.login')</a></li>
+        <li> <a href="{{route('auth.show')}}">@lang('messages.register')</a></li>
         <li> <a class="fa fa-user" href="#"></a></li>
         <li> <a class="fa fa-shopping-cart" href=""></a></li>
     </div>
@@ -230,11 +226,7 @@
                         <p>@lang('messages.display') 2 <span> | </span> 4 @lang('messages.product')</p>
                     </div>
                     <div class="cartegory-right-bottom-items">
-<<<<<<< HEAD
                         <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span>@lang('messages.last_page')</p>
-=======
-                        <p><span>&#171; </span>1 2 3 4 5 <span>&#187;</span> @lang('messages.last_page')</p>
->>>>>>> 6114140a1272b0a17439217fb9ef664cd2d3c96c
                     </div>
                 </div>
             </div>

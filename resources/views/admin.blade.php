@@ -10,13 +10,15 @@
             <div id="admin-heading-panel">
                 <div class="container">
                     <div class="left-panel">
-                        @lang('messages.hi') <span>@lang('messages.admin')</span>
+                        @if (Auth::check())
+                        @lang('messages.hi') : {{Auth::user()->email}}
+                        @endif
                     </div>
                     <div class="right-panel">
                         <img height="24" src="{{asset('frontend/Images/home icon (1).jpg')}}"/>
-                        <a href="#">@lang('messages.hi')</a>
+                        <a href="#">@lang('messages.home')</a>
                         <img height="24" src="{{asset('frontend/Images/500_F_33527214_1ySp8kyGMZEAgk5MGELVAFxHxXRPNVEE.jpg')}}"/>
-                        <a href="#">@lang('messages.logout')</a>
+                        <a href="{{ route('logout') }}">@lang('messages.logout')</a>
                     </div>
                 </div>
             </div>
