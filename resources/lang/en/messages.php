@@ -23,7 +23,7 @@ return [
     'select_file' => 'Chọn têp',
     'product_code' => 'Mã sản phẩm',
     'product_image' => 'Ảnh sản phẩm',
-    'price' => 'G',
+    'price' => 'Giá',
     'hi' => 'Xin chào',
     'home_page' => 'Trang chủ',
     'logout' => 'Đăng xuất',
@@ -35,5 +35,9 @@ return [
     'edit' => 'Sửa',
     'delete' => 'Xoá',
     'add_new_page' => 'Trang thêm mới',
-    'contact' => 'Liên hệ'
+    'contact' => 'Liên hệ',
+    'email' => 'Email',
+    'password' => 'Mật khẩu',
+    'confirm' => 'Xác nhận mật khẩu',
+    'name' => 'Họ và tên'
 ];
