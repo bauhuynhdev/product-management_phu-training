@@ -23,7 +23,7 @@ return [
     'select_file' => 'Chọn têp',
     'product_code' => 'Mã sản phẩm',
     'product_image' => 'Ảnh sản phẩm',
-    'price' => 'G',
+    'price' => 'Giá',
     'hi' => 'Xin chào',
     'home_page' => 'Trang chủ',
     'logout' => 'Đăng xuất',
