@@ -40,5 +40,7 @@ return [
     'email' => 'Email',
     'password' => 'Mật khẩu',
     'password_confirm' => 'Xác nhận mật khẩu',
-    'name' => 'Họ và tên'
+    'name' => 'Họ và tên',
+    'account_successfull_created' => 'Bạn đã tạo tài khoản thành công, mời bạn đăng nhập',
+    'this_account_already_exists' => 'Tài khoản này đã tồn tại'
 ];

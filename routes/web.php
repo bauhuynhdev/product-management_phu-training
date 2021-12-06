@@ -25,7 +25,7 @@ Route::get('/edit', function () {
 });
 Route::get('/register','UserController@show')->name('auth.show');
 Route::post('/register','UserController@store')->name('auth.post');
-Route::get('/login','UserController@showLogin')->name('auth.showLogin');
+Route::get('/login','UserController@showlogin')->name('auth.showlogin');
 Route::post('/login','UserController@login')->name('auth.login');
 Route::get('logout','UserController@logout')->name('logout');
 

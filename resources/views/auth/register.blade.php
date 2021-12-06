@@ -14,7 +14,7 @@
     </span>
     @endif
     <div class="container">
-        <form class="form-login" action="{{route('auth.post')}}" method="POST" enctype="multipart/form-data">
+        <form class="form-login" action="{{route('auth.post')}}" method="post">
             <h1>@lang('messages.register')</h1>
             <div class="form-text">
                 <input type="text" placeholder="@lang('messages.name')" name="name">
