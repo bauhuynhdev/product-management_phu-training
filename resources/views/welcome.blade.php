@@ -23,8 +23,8 @@
     </div>
     <div class="others">
         <li> <input type="text" placeholder="@lang('messages.search')" id="inputsearch"> <i class="fa fa-search"></i></li>
-        <li> <a href="#">@lang('messages.login')</a></li>
-        <li> <a href="#">@lang('messages.register')</a></li>
+        <li> <a href="{{route('auth.login')}}">@lang('messages.login')</a></li>
+        <li> <a href="{{route('auth.show')}}">@lang('messages.register')</a></li>
         <li> <a class="fa fa-user" href="#"></a></li>
         <li> <a class="fa fa-shopping-cart" href=""></a></li>
     </div>

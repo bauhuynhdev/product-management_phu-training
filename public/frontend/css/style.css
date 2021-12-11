@@ -45,7 +45,7 @@ header:hover {
     padding: 12px 6px;
 }
 .menu > li a {
-    font-size: 13px;
+    font-size: 23px;
     font-weight: bold;
 }
 .others {
@@ -55,7 +55,7 @@ header:hover {
 .others > li {
     font-weight: bold;
     padding: 0 12px;
-    font-size: 13px;
+    font-size: 18px;
     position: relative;
     text-align: center;
 }
@@ -139,6 +139,7 @@ header:hover {
 .row {
     display: flex ;
     flex-wrap: wrap;
+    margin-right: -80px;
 }
 .cartegory {
     padding: 100px 0 0;
@@ -148,11 +149,11 @@ header:hover {
 }
 .cartegory-left ul li {
     padding: 12px 0;
-    margin-left: 40px;
+    margin-left: -75px;
 }
 .cartegory-left ul li>a {
     color: black;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     font-family: var(--main-text-font);
 }
@@ -161,12 +162,12 @@ header:hover {
 }
 .cartegory-right-top-item:first-child {
     flex: 2;
-    font-size: 16px;
+    font-size: 23px;
     font-family: var(--main-text-font);
     font-weight: bold;
 }
 .cartegory-right-top-item {
-    flex: 1;
+    flex: 0;
     padding: 0 12px;
 }
 .cartegory-right-top-item button {
@@ -179,7 +180,7 @@ header:hover {
     cursor: pointer;
 }
 .cartegory-right-top-item select {
-    padding:5px 15px;
+    padding:5px  37px;
     display: flex;
     justify-content: space-between;
     background-color: #ffff;
@@ -196,16 +197,17 @@ header:hover {
     text-align: center;
     padding: 12px 0;
     color: red;
+    font-size: 25px;
 }
 .cartegory-right-content-item h2 {
-    font-size: 11px;
+    font-size: 19px;
     font-family: var(--main-text-font);
     margin-top: 6px;
     color: #333333;
 }
 .cartegory-right-content-item img {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
 }
 .cartegory-right-bottom {
     justify-content: space-between;

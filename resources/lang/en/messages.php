@@ -15,7 +15,7 @@ return [
     'last_page' => 'Trang cuối',
     'you_already_have_an_account?' => 'Bạn đã có tài khoản?',
     'sign_in_here' => 'Đăng nhập tại đây',
-    'you_dont_have_an_account_yet' => 'Bạn chưa có tài khoản',
+    'you_dont_have_an_account_yet?' => 'Bạn chưa có tài khoản?',
     'sign_up_here' => 'Đăng ký tại đây',
     'edit_page' => 'Trang sửa',
     'back_admin_page' => 'Về trang quản trị',
@@ -36,8 +36,11 @@ return [
     'delete' => 'Xoá',
     'add_new_page' => 'Trang thêm mới',
     'contact' => 'Liên hệ',
+    'home' => 'Trang chủ',
     'email' => 'Email',
     'password' => 'Mật khẩu',
-    'confirm' => 'Xác nhận mật khẩu',
-    'name' => 'Họ và tên'
+    'password_confirm' => 'Xác nhận mật khẩu',
+    'name' => 'Họ và tên',
+    'account_successfull_created' => 'Bạn đã tạo tài khoản thành công, mời bạn đăng nhập',
+    'this_account_already_exists' => 'Tài khoản này đã tồn tại'
 ];

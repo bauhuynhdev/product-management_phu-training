@@ -3,7 +3,7 @@ body{
     font-family: arial;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
 }
 .container{
     margin: 0 auto;
@@ -63,12 +63,12 @@ a:hover{
 .left-menu{
     float: left;
     width: 200px;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .main-content{
     float: left;
-    width: 660px;
-    margin-left: 20px;
+    width: 1000px;
+    margin-left: 60px;
 }
 .main-content h1{
     margin: 0;
@@ -116,7 +116,7 @@ a:hover{
 table{
     margin-top: 10px;
     border:1px solid black;
-    width: 636px;
+    width: 977px;
 }
 th{
     border:1px solid black;
