@@ -5,7 +5,7 @@ use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\Admin as ModelsAdmin;
 use Illuminate\Support\Facades\Auth;
-use App\User;
+
 
 class UserController extends Controller
 {
@@ -22,9 +22,9 @@ class UserController extends Controller
             $newUser->password = bcrypt($request->password);
             $newUser->role = $request->role;
             $newUser->save();
-            return redirect()->route('auth.show')->with('message',__('messages.account_successfull_created'));
+            return redirect()->route('get.login')->with('message',__('messages.account_successfull_created'));
         }else{
-            return redirect()->route('auth.showlogin')->with('message',__('messages.this_account_already_exists'));
+            return redirect()->route('get.register')->with('message',__('messages.this_account_already_exists'));
         }
 
         }
@@ -41,6 +41,6 @@ class UserController extends Controller
         }
     public function logout(){
         Auth::logout();
-        return redirect()->route('auth.showlogin');
+        return redirect()->route('get.login');
     }
 }

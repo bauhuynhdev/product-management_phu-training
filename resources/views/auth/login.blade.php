@@ -8,8 +8,13 @@
     <title>@lang('messages.login')</title>
 </head>
 <body>
+    @if (session('message'))
+    <span>
+        <strong>{{session('message')}}</strong>
+    </span>
+    @endif
     <div class="container">
-        <form class="form-login" action="{{route('auth.login')}}" method="post">
+        <form class="form-login" action="{{route('post.login')}}" method="post">
             @csrf
             <h1>@lang('messages.login')</h1>
             <div class="form-text">
@@ -25,7 +30,7 @@
                 <strong>{{$errors->first('password')}}</strong>
             @endif
             <button type="submit">@lang('messages.login')</button>
-            <span>@lang('messages.you_dont_have_an_account_yet?')   <a href="{{route('auth.show')}}">@lang('messages.sign_up_here')</a></span>
+            <span>@lang('messages.you_dont_have_an_account_yet?')   <a href="{{route('get.register')}}">@lang('messages.sign_up_here')</a></span>
         </form>
     </div>
 </body>
