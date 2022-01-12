@@ -14,7 +14,8 @@
     </span>
     @endif
     <div class="container">
-        <form class="form-login" action="{{route('auth.post')}}" method="post">
+        <form class="form-login" action="{{route('post.register')}}" method="post">
+            @csrf
             <h1>@lang('messages.register')</h1>
             <div class="form-text">
                 <input type="text" placeholder="@lang('messages.name')" name="name">
@@ -42,8 +43,7 @@
             </div>
             <input type="hidden" value="1" name="role">
             <button type="submit">@lang('messages.register')</button>
-            <span>@lang('messages.you_already_have_an_account?')<a href="{{route('auth.login')}}"> @lang('messages.sign_in_here')</a></span>
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <span>@lang('messages.you_already_have_an_account?')<a href="{{route('get.login')}}"> @lang('messages.sign_in_here')</a></span>
         </form>
     </div>
 </body>

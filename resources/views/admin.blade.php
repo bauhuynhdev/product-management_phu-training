@@ -38,35 +38,39 @@
                         <h1>@lang('messages.list_of_products')</h1>
                         <div class="listing-items">
                             <div class="buttons">
-                                <a href="">@lang('messages.add_new')</a>
+                                <a href="{{ route('get.add') }}/">@lang('messages.add_new')</a>
                             </div>
                             <div class="listing-search">
-                                <form>
+                                <form type="get" action="">
                                     <fieldset>
-                                        <legend>@lang('messages.search')</legend><input type="text">
-                                        <input type="submit" value="@lang('messages.search')" />
+                                        <input type="search" placeholder="@lang('messages.search')" name="search" value="{{$search}}"/>
+                                        <button>@lang('messages.search')</button>
                                     </fieldset>
                                 </form>
                             </div>
                             <table>
+                                <thead>
                                 <tr>
                                     <th>@lang('messages.product_name')</th>
                                     <th>@lang('messages.product_image')</th>
                                     <th>@lang('messages.product_code')</th>
                                     <th>@lang('messages.price')</th>
-                                    <th>Copy</th>
                                     <th>@lang('messages.edit')</th>
                                     <th>@lang('messages.delete')</th>
                                 </tr>
+                                </thead>
+                                <tbody>
+                                @foreach($pro as $value)
                                 <tr>
-                                    <td>YZF</td>
-                                    <td><img height="70px" src="{{asset('frontend/Images/yzf-r1374b (1).jpg')}}" /></td>
-                                    <td>14141242</td>
-                                    <td>100,000,000VND</td>
-                                    <td><a href="#">Copy</a></td>
-                                    <td><a href="#">@lang('messages.edit')</a></td>
-                                    <td><a href="#">@lang('messages.delete')</a></td>
+                                    <td>{{ $value['name'] }}</td>
+                                    <td><img src="{{ $value['image'] }}" width="100px">
+                                    <td>{{ $value['code'] }}</td>
+                                    <td>{{ $value['price'] }}</td>
+                                    <td><a href="{{ url('edit/'.$value['id']) }}">@lang('messages.edit')</a></td>
+                                    <td><a href="{{ url('delete/'.$value['id']) }}">@lang('messages.delete')</a></td>
                                 </tr>
+                                @endforeach
+                                </tbody>
                             </table>
                         </div>
                     </div>

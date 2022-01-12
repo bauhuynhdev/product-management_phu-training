@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -14,22 +15,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/admin', function () {
-    return view('admin');
+Route::get('/register', 'UserController@show')->name('get.register');
+Route::post('/register', 'UserController@store')->name('post.register');
+Route::get('/login', 'UserController@showlogin')->name('get.login');
+Route::post('/login', 'UserController@login')->name('post.login');
+Route::get('logout', 'UserController@logout')->name('logout');
+
+Route::group(['middleware' => 'adminLogin'], function () {
+    Route::get('/admin', 'ProductsController@viewProducts')->name('get.admin');
+    Route::get('/add', 'ProductsController@viewAddpage')->name('get.add');
+    Route::post('/add', 'ProductsController@addProducts')->name('post.addproducts');
+    Route::get('delete/{id}', 'ProductsController@deleteProducts');
+    Route::get('edit/{id}', 'ProductsController@editProducts');
+    Route::put('update/{id}', 'ProductsController@updateProducts');
 });
-Route::get('/add', function () {
-    return view('add');
-});
-Route::get('/edit', function () {
-    return view('edit');
-});
-Route::get('/register','UserController@show')->name('auth.show');
-Route::post('/register','UserController@store')->name('auth.post');
-Route::get('/login','UserController@showlogin')->name('auth.showlogin');
-Route::post('/login','UserController@login')->name('auth.login');
-Route::get('logout','UserController@logout')->name('logout');
-
-
-
-
-
