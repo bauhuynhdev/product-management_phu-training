@@ -29,4 +29,12 @@ class RegisterRequest extends FormRequest
             'password' => 'required|confirmed|min:6|max:16',
         ];
     }
+    public function messages()
+    {
+        return [
+            'name.required' => __('messages.validate_name'),
+            'email.required' => __('messages.validate_email'),
+            'password.required' => __('messages.validate_password'),
+        ];
+    }
 }

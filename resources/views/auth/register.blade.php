@@ -20,25 +20,25 @@
             <div class="form-text">
                 <input type="text" placeholder="@lang('messages.name')" name="name">
                 @if ($errors->has('name'))
-                    {{ $errors->first('name') }}
+                    <span style="color: red">{{ $errors->first('name') }}</span>
                 @endif
             </div>
             <div class="form-text">
                 <input type="text" placeholder="@lang('messages.email')" name="email">
                 @if ($errors->has('email'))
-                    {{ $errors->first('email') }}
+                    <span style="color: red">{{ $errors->first('email') }}</span>
                 @endif
             </div>
             <div class="form-text">
                 <input type="password" placeholder="@lang('messages.password')" name="password">
                 @if ($errors->has('password'))
-                    {{ $errors->first('password') }}
+                    <span style="color: red">{{ $errors->first('password') }}</span>
                 @endif
             </div>
             <div class="form-text">
                 <input type="password" placeholder="@lang('messages.password_confirm')" name="password_confirmation"/>
                 @if ($errors->has('password_confirmation'))
-                    {{ $errors->first('password_confirmation') }}
+                <span style="color: red">{{ $errors->first('password') }}</span>
                 @endif
             </div>
             <input type="hidden" value="1" name="role">

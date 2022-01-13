@@ -35,7 +35,7 @@ class UserController extends Controller
     public function login(LoginRequest $request){
             if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
                 if(Auth::user()->role==1){
-                    return view('admin');
+                    return redirect()->route('get.admin');
                 }
             }
         }

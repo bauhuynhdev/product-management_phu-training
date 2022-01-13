@@ -30,4 +30,13 @@ class AddRequest extends FormRequest
             'price' => 'required'
         ];
     }
+    public function messages()
+    {
+        return [
+            'name.required' => __('messages.validate_product_name'),
+            'image.required' => __('messages.validate_product_image'),
+            'code.required' => __('messages.validate_product_code'),
+            'price.required' => __('messages.validate_product_price'),
+        ];
+    }
 }

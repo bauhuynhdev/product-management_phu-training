@@ -21,13 +21,13 @@
                 <input type="text" placeholder="@lang('messages.email')" name="email">
             </div>
             @if ($errors->has('email'))
-                <strong>{{$errors->first('email')}}</strong>
+                <span style="color: red">{{$errors->first('email')}}</span>
             @endif
             <div class="form-text">
                 <input type="password" placeholder="@lang('messages.password')" name="password">
             </div>
             @if ($errors->has('password'))
-                <strong>{{$errors->first('password')}}</strong>
+                <span style="color: red">{{$errors->first('password')}}</span>
             @endif
             <button type="submit">@lang('messages.login')</button>
             <span>@lang('messages.you_dont_have_an_account_yet?')   <a href="{{route('get.register')}}">@lang('messages.sign_up_here')</a></span>

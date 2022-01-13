@@ -34,6 +34,11 @@
                             <input type="submit" value="@lang('messages.update')">
                             <a href="#" class="buttons">@lang('messages.back_admin_page')</a>
                         </div>
+                        @if($errors->any())
+                        @foreach($errors->all() as $error)
+                        <li style="color: red">{{$error}}</li>
+                        @endforeach
+                        @endif
                     </form>
                 </div>
 

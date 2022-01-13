@@ -28,4 +28,11 @@ class LoginRequest extends FormRequest
             'password'=>'required'
         ];
     }
+    public function messages()
+    {
+        return [
+            'email.required' => __('messages.validate_email'),
+            'password.required' => __('messages.validate_password'),
+        ];
+    }
 }

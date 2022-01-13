@@ -42,5 +42,13 @@ return [
     'password_confirm' => 'Xác nhận mật khẩu',
     'name' => 'Họ và tên',
     'account_successfull_created' => 'Bạn đã tạo tài khoản thành công, mời bạn đăng nhập',
-    'this_account_already_exists' => 'Tài khoản này đã tồn tại'
+    'update' => 'Cập nhật',
+    'this_account_already_exists' => 'Tài khoản này đã tồn tại',
+    'validate_name' => 'Họ và tên không được để trống',
+    'validate_email' => 'Email không được để trống',
+    'validate_password' => 'Mật khẩu không được để trống',
+    'validate_product_name' => 'Tên sản phẩm không được để trống',
+    'validate_product_image' => 'Ảnh sản phẩm không được để trống',
+    'validate_product_code' => 'Mã sản phẩm không được để trống',
+    'validate_product_price' => 'Giá sản phẩm không được để trống',
 ];

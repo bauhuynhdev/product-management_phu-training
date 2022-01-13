@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\AddRequest;
+use App\Http\Requests\EditRequest;
 use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -23,7 +24,7 @@ class ProductsController extends Controller
         $data = compact('pro','search');
         return view('admin')->with($data);
     }
-    public function addProducts(Request $request)
+    public function addProducts(AddRequest $request)
     {
         $newPro = new Products();
         $newPro->name = $request->name;
@@ -57,7 +58,7 @@ class ProductsController extends Controller
         $pro = Products::find($id);
         return view('edit',compact('pro'));
     }
-    public function updateProducts(Request $request, $id)
+    public function updateProducts(EditRequest  $request, $id)
     {
         $pro = Products::find($id);
         $pro->name = $request->name;

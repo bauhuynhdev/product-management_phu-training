@@ -20,32 +20,25 @@
                             @csrf
                             <div class="clearfix">
                                 <input class="col2 first" type="text" name="name" placeholder="@lang('messages.product_name')">
-                                    @if ($errors->has('name'))
-                                    {{ $errors->first('name') }}
-                                    @endif
                             </div>
                             <div class="clearfix">
                                 <input class="col2 first" type="file" name="image" placeholder="@lang('messages.select_file')" accept="image/png, image/gif, image/jpeg" multiple>
-                                    @if ($errors->has('image'))
-                                    {{ $errors->first('image') }}
-                                    @endif
                             </div>
                             <div class="clearfix">
                                 <input class="col2 first" type="text" name="code" placeholder="@lang('messages.product_code')">
-                                    @if ($errors->has('code'))
-                                    {{ $errors->first('code') }}
-                                    @endif
                             </div>
                             <div class="clearfix">
                                 <input class="col2 first" type="text" name="price" placeholder="@lang('messages.price')">
-                                    @if ($errors->has('price'))
-                                    {{ $errors->first('price') }}
-                                    @endif
                             </div>
                             <div class="clearfix">
                                 <input type="submit" value="@lang('messages.add_new')">
                                 <a href="#" class="buttons">@lang('messages.back_admin_page')</a>
                             </div>
+                            @if($errors->any())
+                            @foreach($errors->all() as $error)
+                            <li style="color: red">{{$error}}</li>
+                            @endforeach
+                            @endif
                         </form>
                     </div>
 
